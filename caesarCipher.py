@@ -1,5 +1,11 @@
 import string
 
+def main():
+    message = 'This is my secret message.'
+    key = 13
+    mode = 'decrypt'
+    caesarCipher(message, key, mode)
+
 def caesarCipher(message, key, mode):
     SYMBOLS = string.ascii_uppercase + string.ascii_lowercase + string.digits + ' !?.'
     translated = ''
@@ -22,8 +28,4 @@ def caesarCipher(message, key, mode):
     print(translated)
 
 if __name__ == '__main__':
-    message = 'This is my secret message.'
-    key = 13
-    mode = 'decrypt'
-    caesarCipher(message, key, mode)
-
+    main()

@@ -1,5 +1,9 @@
 import string
 
+cipher = 'GUVfxVfxZlxfRPeRgxZRffNTR0'
+def main():
+    caesarHacker(cipher)
+
 def caesarHacker(cipher):
     SYMBOLS = string.ascii_uppercase + string.ascii_lowercase + string.digits + ' !?.'
     for KEY in range(len(SYMBOLS)):
@@ -18,5 +22,4 @@ def caesarHacker(cipher):
         print(translated, KEY)
 
 if __name__ == '__main__':
-    cipher = 'GUVfxVfxZlxfRPeRgxZRffNTR0'
-    caesarHacker(cipher)
+    main()

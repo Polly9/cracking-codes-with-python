@@ -1,3 +1,8 @@
+def main():
+    print('↓insert text↓')
+    text = input()
+    print(reverse_cipher(text))
+
 def reverse_cipher(text):
     """
     入力した文字列を逆順で返す
@@ -9,6 +14,4 @@ def reverse_cipher(text):
     return translated
 
 if __name__ == '__main__':
-    print('↓insert text↓')
-    text = input()
-    print(reverse_cipher(text))
+    main()
