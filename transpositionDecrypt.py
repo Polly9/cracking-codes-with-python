@@ -3,9 +3,9 @@ import math
 def main():
     message = 'Cenoonommstmme oo snnio. s s c'
     key = 8
-    print(decryptMessage(message, key))
+    print(decryptMessage(key, message))
 
-def decryptMessage(message, key):
+def decryptMessage(key, message):
     N = len(message)
     cols = int(math.ceil(N / 8))
     rows = key
