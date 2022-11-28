@@ -7,8 +7,8 @@ def main():
 
 def decryptMessage(key, message):
     N = len(message)
-    cols = int(math.ceil(N / 8))
     rows = key
+    cols = int(math.ceil(N / rows))
     plainText = [''] * cols
     rems = cols * rows - N  # 余り
     
